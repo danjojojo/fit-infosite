@@ -25,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <Stack width="100%" position={"sticky"} top={0} zIndex={1}>
+    <Stack width="100%" position={"sticky"} top={0} zIndex={999}>
       <Box
         height="87"
         alignItems="center"
