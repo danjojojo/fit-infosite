@@ -36,7 +36,7 @@ export default function Landing() {
             Your browser does not support the video tag.
           </video>
         </Container>
-        <VStack width={"100%"}>
+        <VStack>
           <Text textStyle={"universal.caption"}>ALAMIN ANG ILLICIT TRADE</Text>
           <Button
             border={"1px solid white"}

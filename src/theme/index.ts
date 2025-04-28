@@ -9,7 +9,8 @@ const config = defineConfig({
           black: { value: "#000000" },
           darkgray: { value: "#121010" },
           red: { value: "#CD0E04" },
-          white: { value: "#F0EEEB" },
+          dirtywhite: { value: "#F0EEEB" },
+          white: { value: "#FFFFFF" }
         },
       },
       spacing: {

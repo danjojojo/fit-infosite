@@ -3,6 +3,7 @@ import { Stack } from "@chakra-ui/react";
 import Header from "@/components/layout/Header";
 import Landing from "@/components/ui/Landing";
 import IllicitTobaccoTrade from "@/components/ui/IllicitTobaccoTrade";
+import IlegalNaYosi from "@/components/ui/IlegalNaYosi";
 
 export default function Home() {
   return (
@@ -13,12 +14,13 @@ export default function Home() {
       gap={0}
       backgroundColor="app.black"
       width={"100%"}
-      overflowX={"hidden"}
+      // overflowX={"hidden"}
       // border={"1px solid red"}
     >
-      <Header />
-      <Landing />
-      <IllicitTobaccoTrade />
+      <Header/>
+      <Landing/>
+      <IllicitTobaccoTrade/>
+      <IlegalNaYosi/>
     </Stack>
   );
 }

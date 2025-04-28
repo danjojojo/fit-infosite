@@ -23,16 +23,10 @@ export default function IllicitTobaccoTrade() {
       id="ano-ang-illicit-tobacco-trade"
       width={"inherit"}
       position={"relative"}
-      height={"auto"}
       overflow={"hidden"}
     >
       <VStack background="app.dirtywhite">
-        <Bleed
-          position={"absolute"}
-          minWidth={453}
-          scale={1.1}
-          zIndex={2}
-        >
+        <Bleed position={"absolute"} minWidth={453} scale={1.1} zIndex={2}>
           <Image
             src={"/assets/blood-spill-two.png"}
             alt="Blood Spill"
@@ -40,18 +34,20 @@ export default function IllicitTobaccoTrade() {
             height={268}
           />
         </Bleed>
-        <Box position="relative" zIndex={3} width={"app.base"}>
+        <Box position="relative" zIndex={3} maxWidth={"app.base"}>
           <Text
             color={"app.black"}
-            textStyle={"universal.title"}
-            width={253}
-            marginTop={117}
-            marginLeft={106}
+            textStyle={"universal.h1"}
+            maxWidth={253}
+            marginTop={"30%"}
+            marginLeft={"30%"}
             display={"flex"}
             flexDirection={"column"}
             gap={1}
           >
-            <Text as="span" margin={0}>ANO BA ANG </Text>
+            <Text as="span" margin={0}>
+              ano ba ang{" "}
+            </Text>
             {highlightedText.map((text, index) => (
               <Text
                 as="mark"
@@ -63,14 +59,15 @@ export default function IllicitTobaccoTrade() {
                 height={"textStyle.universal.title.fontSize"}
               >
                 {" "}
-                {text.toUpperCase()}
+                {text}
               </Text>
             ))}
           </Text>
           <Text
             color={"app.black"}
-            textStyle={"universal.description"}
+            textStyle={"universal.legend"}
             padding={"app.base"}
+            marginTop={"app.base"}
             whiteSpace={"pre-line"}
           >
             {description}
