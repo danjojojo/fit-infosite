@@ -2,24 +2,17 @@
 
 import Image from "next/image";
 import {
-  Stack,
   Box,
   Text,
-  Icon,
-  Button,
-  Container,
   VStack,
   Bleed,
-  Float,
 } from "@chakra-ui/react";
 import Section from "@/components/ui/Section";
-import { generalIcon } from "@/ui/icons";
-
-// import BloodSpill from "@/ui/img/blood-spill-two.svg";
-// import BloodSpill from "@/ui/img/blood-spill-two.svg";
 
 export default function IllicitTobaccoTrade() {
-  const title = "Ano ba ang Illicit Tobacco Trade?";
+  // const title = "Ano ba ang Illicit Tobacco Trade?";
+  const highlightedText = ["Illicit", "Tobacco", "Trade"];
+
   const description = 
   `Ang ilegal na kalakalan ng sigarilyo ay tumutukoy sa paggawa, pagbenta, o pamamahagi ng sigarilyong di dumaan sa buwis, batas, o health standards. Kasama rito ang smuggled goods, pekeng brand, at mga lehitimong sigarilyong binebenta nang walang tax stamp. 
   
@@ -33,14 +26,12 @@ export default function IllicitTobaccoTrade() {
       height={"auto"}
       overflow={"hidden"}
     >
-      <VStack background="app.white">
+      <VStack background="app.dirtywhite">
         <Bleed
           position={"absolute"}
           minWidth={453}
-          scale={1.2}
+          scale={1.1}
           zIndex={2}
-          // border={"1px solid blue"}
-          // backgroundColor={"app.white"}
         >
           <Image
             src={"/assets/blood-spill-two.png"}
@@ -56,16 +47,30 @@ export default function IllicitTobaccoTrade() {
             width={253}
             marginTop={117}
             marginLeft={106}
-            // border={"1px solid red"}
+            display={"flex"}
+            flexDirection={"column"}
+            gap={1}
           >
-            {title.toUpperCase()}
+            <Text as="span" margin={0}>ANO BA ANG </Text>
+            {highlightedText.map((text, index) => (
+              <Text
+                as="mark"
+                color={"app.white"}
+                backgroundColor={"app.red"}
+                padding={"5px 10px 0px"}
+                key={index}
+                width={"fit-content"}
+                height={"textStyle.universal.title.fontSize"}
+              >
+                {" "}
+                {text.toUpperCase()}
+              </Text>
+            ))}
           </Text>
           <Text
             color={"app.black"}
             textStyle={"universal.description"}
             padding={"app.base"}
-            // width={344}
-            // border={"1px solid blue"}
             whiteSpace={"pre-line"}
           >
             {description}
