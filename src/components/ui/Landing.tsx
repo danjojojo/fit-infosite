@@ -46,6 +46,13 @@ export default function Landing() {
             borderRadius={"50%"}
             background="transparent"
             marginTop={"16px"}
+            onClick={() => {
+                const element = document.getElementById("ano-ang-illicit-tobacco-trade");
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            }
           >
             <Icon width="30px" height="30px">
               {generalIcon("arrow_down")}
