@@ -65,7 +65,7 @@ export default function IllicitTobaccoTrade() {
           </Text>
           <Text
             color={"app.black"}
-            textStyle={"universal.legend"}
+            textStyle={"universal.description"}
             padding={"app.base"}
             marginTop={"app.base"}
             whiteSpace={"pre-line"}

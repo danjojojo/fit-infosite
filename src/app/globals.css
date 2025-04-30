@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -30,12 +31,26 @@ body {
 }
 
 body.scroll-lock{
-  /* position: static; */
-  /* width: 100%; */
-  /* height: 100%; */
   overflow: hidden;
 }
 
 section{
   scroll-margin-top: "87px";
 }
+
+/* PARA MAG STRETCH YUNG CARDS SA SLIDER */
+
+.slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.slick-slide {
+  height: auto !important;
+}
+
+.slick-slide>div {
+  height: 100%;
+}
+
+/* SLIDER END */

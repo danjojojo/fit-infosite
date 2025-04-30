@@ -61,6 +61,15 @@ export const textStyles = defineTextStyles({
         textTransform: "uppercase",
       },
     },
+    h5: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "1.6rem",
+        letterSpacing: "0.16px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
 
     // OVERLINE
 

@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Landing from "@/components/ui/Landing";
 import IllicitTobaccoTrade from "@/components/ui/IllicitTobaccoTrade";
 import IlegalNaYosi from "@/components/ui/IlegalNaYosi";
+import EffectsOfIllicitTrade from "@/components/ui/EffectsOfIllicitTrade";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Landing/>
       <IllicitTobaccoTrade/>
       <IlegalNaYosi/>
+      <EffectsOfIllicitTrade/>
     </Stack>
   );
 }

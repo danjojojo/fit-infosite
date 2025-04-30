@@ -1,10 +1,11 @@
 "use client";
 
 import { Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function NavLinks(props: { toggleMenu: () => void }) {
   const navLinks = [
-    { name: "Home", section: "landing" },
+    { name: "Home", section: "home" },
     {
       name: "Ano ang Illicit Tobacco Trade?",
       section: "ano-ang-illicit-tobacco-trade",
@@ -33,22 +34,22 @@ export default function NavLinks(props: { toggleMenu: () => void }) {
       overflowX={"hidden"}
     >
       {navLinks.map((link, index) => (
-        <a key={index} href={`#${link.section}`}>
+        <Link key={index} href={`#${link.section}`}>
           <Text
             textStyle={"universal.nav"}
             mb={"16px"}
             padding={"0 16px"}
             onClick={() => {
               toggleMenu();
-              const element = document.getElementById(link.section);
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
+              // const element = document.getElementById(link.section);
+              // if (element) {
+              //   element.scrollIntoView({ behavior: "smooth" });
+              // }
             }}
           >
             {link.name.toUpperCase()}
           </Text>
-        </a>
+        </Link>
       ))}
     </Stack>
   );
