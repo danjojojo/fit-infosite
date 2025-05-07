@@ -36,21 +36,62 @@ body.scroll-lock{
 
 section{
   scroll-margin-top: "87px";
+  scroll-snap-type: y mandatory !important;
 }
 
 /* PARA MAG STRETCH YUNG CARDS SA SLIDER */
 
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide {
+  height: 100% !important;
+}
+
 .slick-track {
-  display: flex !important;
-  align-items: stretch;
+  display: block !important;
+  /* align-items: stretch; */
 }
 
 .slick-slide {
-  height: auto !important;
+  height: 100% !important;
 }
 
 .slick-slide>div {
   height: 100%;
+}
+
+.slick-dots li button:before {
+  width: 100% !important;
+  height: 6px !important;
+  text-align: center !important;
+
+  opacity: 0.4 !important;
+  color: transparent !important;
+  background-color: white !important;
+  border-radius: 15px !important;
+}
+
+.slick-dots{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  row-gap: 1px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: white;
+}
+
+.slick-dots li {
+  width: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.slick-dots .slick-active {
+  width: 34px;
+  transition: width 0.3s ease-in-out;
 }
 
 /* SLIDER END */

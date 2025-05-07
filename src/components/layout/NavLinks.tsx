@@ -22,7 +22,7 @@ export default function NavLinks(props: { toggleMenu: () => void }) {
     <Stack
       display="flex"
       flexDirection="column"
-      gap={0}
+      columnGap={0}
       backgroundColor="#000000"
       height="100svh"
       paddingTop={"112px"}

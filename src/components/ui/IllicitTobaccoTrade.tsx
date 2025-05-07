@@ -10,7 +10,6 @@ import {
 import Section from "@/components/ui/Section";
 
 export default function IllicitTobaccoTrade() {
-  // const title = "Ano ba ang Illicit Tobacco Trade?";
   const highlightedText = ["Illicit", "Tobacco", "Trade"];
 
   const description = 

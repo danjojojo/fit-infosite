@@ -25,7 +25,7 @@ const config = defineConfig({
       sizes: {
         app: {
           base: {
-            value: "390px",
+            value: "375px",
           },
         },
       },

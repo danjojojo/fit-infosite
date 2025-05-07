@@ -16,6 +16,15 @@ export const textStyles = defineTextStyles({
 
     // HEADINGS
 
+    h1_2xl: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "9.6rem",
+        letterSpacing: "-0.96px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
     h1_xl: {
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
@@ -34,12 +43,21 @@ export const textStyles = defineTextStyles({
         textTransform: "uppercase",
       },
     },
+    h1_s: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "5.6rem",
+        letterSpacing: "-0.56px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
     h2: {
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "4.2rem",
         letterSpacing: "-0.42px",
-        lineHeight: "120%",
+        lineHeight: "100%",
         textTransform: "uppercase",
       },
     },
@@ -48,11 +66,20 @@ export const textStyles = defineTextStyles({
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "3.4rem",
         letterSpacing: "-0.34px",
-        lineHeight: "120%",
+        lineHeight: "100%",
         textTransform: "uppercase",
       },
     },
     h4: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "2.4rem",
+        letterSpacing: "0.24px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
+    h5: {
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "1.8rem",
@@ -61,7 +88,7 @@ export const textStyles = defineTextStyles({
         textTransform: "uppercase",
       },
     },
-    h5: {
+    h6: {
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "1.6rem",
@@ -89,6 +116,36 @@ export const textStyles = defineTextStyles({
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "1.8rem",
         letterSpacing: "0.18px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
+
+    caption_s: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "1.6rem",
+        letterSpacing: "0.16px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
+
+    news_title: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "2.8rem",
+        letterSpacing: "0.28px",
+        lineHeight: "100%",
+        textTransform: "uppercase",
+      },
+    },
+
+    title: {
+      value: {
+        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontSize: "3.2rem",
+        letterSpacing: "0.32px",
         lineHeight: "100%",
         textTransform: "uppercase",
       },
@@ -123,48 +180,12 @@ export const textStyles = defineTextStyles({
       },
     },
 
-    title: {
+    fb_cond_description: {
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
-        fontSize: "clamp(4.2rem, 6rem, 8rem)",
-        letterSpacing: "-0.6px",
-        lineHeight: "100%",
-      },
-    },
-
-    title_2: {
-      value: {
-        fontFamily: "var(--font-titling-gothic-fb-comp)",
-        fontSize: "4.2rem",
-        letterSpacing: "-0.6px",
-        lineHeight: "100%",
-      },
-    },
-
-    caption_2: {
-      value: {
-        fontFamily: "var(--font-so-do-sans)",
-        fontSize: "1.6rem",
-        letterSpacing: "-0.48px",
-        lineHeight: "100%",
-      },
-    },
-
-    description_1: {
-      value: {
-        fontFamily: "var(--font-so-do-sans)",
-        fontSize: "1.6rem",
-        letterSpacing: "-0.48px",
-        lineHeight: "130%",
-      },
-    },
-
-    description_2: {
-      value: {
-        fontFamily: "var(--font-so-do-sans)",
-        fontSize: "1.2rem",
-        letterSpacing: "-0.36px",
-        lineHeight: "130%",
+        fontSize: "2.3rem",
+        letterSpacing: "-0.23px",
+        lineHeight: "120%",
       },
     },
   },
