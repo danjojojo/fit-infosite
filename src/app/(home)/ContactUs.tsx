@@ -1,11 +1,13 @@
 "use client";
 
-import { Text, Box, Flex, VStack, Icon, Link, Button } from "@chakra-ui/react";
+import { Text, Box, Flex, VStack, Icon, Link } from "@chakra-ui/react";
 import Image from "next/image";
 import Section from "@/components/ui/Section";
 
 import Headline from "@/components/ui/Headline";
 import PoliceTape from "@/components/ui/PoliceTape";
+import FITButton from "@/components/ui/FITButton";
+
 import ContentContainer from "@/components/layout/ContentContainer";
 import { generalIcon } from "@/ui/icons";
 
@@ -65,11 +67,7 @@ export default function ContactUs() {
         <ContentContainer>
           <Flex flexDir="column" rowGap="app.base" position="relative">
             <Box position="relative" height="100%">
-              <Box
-                width="fit-content"
-                margin="0 auto"
-                filter="grayscale(100%)"
-              >
+              <Box width="fit-content" margin="0 auto" filter="grayscale(100%)">
                 <Image
                   src="/assets/finger-point.png"
                   alt="Report"
@@ -126,15 +124,12 @@ export default function ContactUs() {
                 </VStack>
               </Box>
 
-              <Button
-                width="100%"
-                textStyle="universal.h6"
-                padding="7%"
-                backgroundColor="app.red"
+              <FITButton
+                text="Send us a message"
+                bgColor="app.red"
                 color="app.white"
-              >
-                SEND US A MESSAGE
-              </Button>
+              />
+
             </Flex>
           </Flex>
         </ContentContainer>

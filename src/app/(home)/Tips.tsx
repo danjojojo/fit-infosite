@@ -68,7 +68,7 @@ export default function Tips() {
           </Box>
         </ContentContainer>
         <ContentContainer border="1px solid red">
-          <Flex flexDir="column" rowGap="app.base">
+          <Flex flexDir="column" rowGap="app.base" color="app.white">
             {tipCards.map((tipCard, index) => (
               <VStack backgroundColor="app.gray" padding="app.base" key={index}>
                 <Image

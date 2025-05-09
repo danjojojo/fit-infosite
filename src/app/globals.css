@@ -49,12 +49,12 @@ section{
 }
 
 .slick-track {
-  display: block !important;
-  /* align-items: stretch; */
+  display: flex !important;
+  align-items: stretch;
 }
 
 .slick-slide {
-  height: 100% !important;
+  height: auto !important;
 }
 
 .slick-slide>div {

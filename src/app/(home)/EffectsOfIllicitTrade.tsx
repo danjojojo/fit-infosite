@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Headline from "@/components/ui/Headline";
+import FITButton from "@/components/ui/FITButton";
 import ContentContainer from "@/components/layout/ContentContainer";
 
 import PoliceTape from "@/components/ui/PoliceTape";
@@ -162,11 +163,13 @@ export default function EffectsOfIllicitTrade() {
           rotation={4.8}
           tapeText={"FIGHT ILLICIT TRADE"}
           startsFrom="left"
+          tapeColor="app.black"
         />
         <PoliceTape
           rotation={-4.19}
           tapeText={"FIGHT ILLICIT TRADE"}
           startsFrom="right"
+          tapeColor="app.black"
         />
 
         <ContentContainer>
@@ -225,7 +228,11 @@ export default function EffectsOfIllicitTrade() {
         </ContentContainer>
 
         <ContentContainer>
-          <Text textStyle="universal.fb_cond_description" textAlign="center">
+          <Text
+            textStyle="universal.fb_cond_description"
+            textAlign="center"
+            color="app.white"
+          >
             Multa at kulong ang kahihinatnan mo kung ikaw ay nahuling nagbebenta
             o namamahagi ng peke o ilegal na sigarilyo
           </Text>
@@ -238,6 +245,7 @@ export default function EffectsOfIllicitTrade() {
               paddingTop="app.base"
               paddingBottom="40px"
               key={index}
+              color="app.white"
             >
               <Flex flexDir="column" alignItems="center">
                 <Text textStyle="universal.title" textAlign="center">
@@ -249,14 +257,11 @@ export default function EffectsOfIllicitTrade() {
               </Flex>
             </Box>
           ))}
-          <Button
-            width="100%"
-            textStyle="universal.h6"
-            padding="7%"
-            backgroundColor="app.black"
-          >
-            BASAHIN LAHAT
-          </Button>
+          <FITButton
+            text="Basahin lahat"
+            bgColor="app.black"
+            color="app.white"
+          />
         </ContentContainer>
       </VStack>
     </Section>

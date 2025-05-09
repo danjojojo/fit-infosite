@@ -25,26 +25,23 @@ export default function NavLinks(props: { toggleMenu: () => void }) {
       columnGap={0}
       backgroundColor="#000000"
       height="100svh"
-      paddingTop={"112px"}
+      paddingTop="112px"
       width="100%"
-      position={"fixed"}
+      position="fixed"
       left={0}
       top={0}
       zIndex={2}
-      overflowX={"hidden"}
+      overflowX="hidden"
     >
       {navLinks.map((link, index) => (
         <Link key={index} href={`#${link.section}`}>
           <Text
-            textStyle={"universal.nav"}
-            mb={"16px"}
-            padding={"0 16px"}
+            textStyle="universal.nav"
+            mb="16px"
+            padding="0 16px"
+            color="app.white"
             onClick={() => {
               toggleMenu();
-              // const element = document.getElementById(link.section);
-              // if (element) {
-              //   element.scrollIntoView({ behavior: "smooth" });
-              // }
             }}
           >
             {link.name.toUpperCase()}

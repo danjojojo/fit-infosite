@@ -71,7 +71,7 @@ export default function News() {
             />
           </Box>
         </ContentContainer>
-        <Box width="100vw" height="100dvh" position="absolute" top="0">
+        <Box width="100vw" height="100dvh" position="absolute" top="0" color="app.white">
           <Box {...api.getItemGroupProps()} height="100%" width="100%">
             {newsArticles.map((newsArticle, index) => (
               <Box

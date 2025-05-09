@@ -3,7 +3,7 @@
 // Packages
 import { Box, Button, Stack, Icon } from "@chakra-ui/react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // UI
 import { generalIcon } from "@/ui/icons";
@@ -13,6 +13,7 @@ import NavLinks from "./NavLinks";
 
 export default function Header() {
   const [toggledMenu, setToggledMenu] = useState<boolean>(false);
+  const [navDisplay, setNavDisplay] = useState<boolean>(true);
 
   const toggleMenu = () => {
     setToggledMenu(!toggledMenu);
@@ -24,8 +25,38 @@ export default function Header() {
     }
   };
 
+
+  useEffect(() => {
+    let scrollTimeout: NodeJS.Timeout;
+
+    const handleScroll = () => {
+      setNavDisplay(false); // Hide on scroll
+
+      // Reset previous timeout
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+
+      // Show after scrolling stops
+      scrollTimeout = setTimeout(() => {
+        setNavDisplay(true);
+      }, 250); // Adjust delay as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
+
   return (
-    <Stack width="100%" position={"sticky"} top={0} zIndex={999}>
+    <Stack
+      width="100%"
+      position="sticky"
+      top={navDisplay ? "0px" : "-100px"}
+      zIndex={999}
+      transition="ease 0.3s"
+    >
       <Box
         height="87"
         alignItems="center"
@@ -41,11 +72,11 @@ export default function Header() {
           height={50}
         />
         <Button
-          border={"1px solid white"}
+          border="1px solid white"
           cursor="pointer"
           height={50}
           width={50}
-          borderRadius={"50%"}
+          borderRadius="50%"
           background="transparent"
           onClick={toggleMenu}
         >

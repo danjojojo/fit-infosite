@@ -26,7 +26,6 @@ export default function Headline({
       flexWrap="wrap"
       rowGap={1}
       alignContent="stretch"
-      //   border="1px solid blue"
       {...textProps}
     >
       {ogText.map((text, index) => {
@@ -53,9 +52,9 @@ export default function Headline({
               height="calc(100% - 5px)"
               width="calc(100% + 2px)"
             >
-              {highlight ? "" : " "}
+              {highlight && ""}
               {text + " "}
-              {!highlight ? " " : ""}
+              {!highlight && " "}
             </Text>
           </Box>
         );
