@@ -65,14 +65,14 @@ export const textStyles = defineTextStyles({
       value: {
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "3.4rem",
-        letterSpacing: "-0.34px",
+        letterSpacing: "0.34px",
         lineHeight: "100%",
         textTransform: "uppercase",
       },
     },
     h4: {
       value: {
-        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontFamily: "var(--font-titling-gothic-fb-cond-medium)",
         fontSize: "2.4rem",
         letterSpacing: "0.24px",
         lineHeight: "100%",
@@ -90,7 +90,7 @@ export const textStyles = defineTextStyles({
     },
     h6: {
       value: {
-        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontFamily: "var(--font-titling-gothic-fb-cond-medium)",
         fontSize: "1.6rem",
         letterSpacing: "0.16px",
         lineHeight: "100%",
@@ -146,7 +146,7 @@ export const textStyles = defineTextStyles({
         fontFamily: "var(--font-titling-gothic-fb-comp)",
         fontSize: "3.2rem",
         letterSpacing: "0.32px",
-        lineHeight: "100%",
+        lineHeight: "120%",
         textTransform: "uppercase",
       },
     },
@@ -178,11 +178,11 @@ export const textStyles = defineTextStyles({
         letterSpacing: "-0.36px",
         lineHeight: "130%",
       },
-    },
+  },
 
     fb_cond_description: {
       value: {
-        fontFamily: "var(--font-titling-gothic-fb-comp)",
+        fontFamily: "var(--font-titling-gothic-fb-cond-medium)",
         fontSize: "2.3rem",
         letterSpacing: "-0.23px",
         lineHeight: "120%",

@@ -14,3 +14,8 @@ export const soDoSans = localFont({
   src: "../../public/fonts/SoDoSans-Regular.ttf",
   variable: "--font-so-do-sans",
 });
+
+export const titlingGothicFBCondMedium  = localFont({
+  src: "../../public/fonts/TitlingGothicFBCond-Medium.otf",
+  variable: "--font-titling-gothic-fb-cond-medium",
+});

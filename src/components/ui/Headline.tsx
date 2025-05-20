@@ -36,25 +36,19 @@ export default function Headline({
         const margRight = nextTextHighlight ? "0px" : "7px";
 
         return (
-          <Box
-            key={index}
-            width="fit-content"
-            marginRight={margRight}
-          >
+          <Box key={index} width="fit-content" marginRight={margRight}>
             <Text
               color={highlight ? highlightedTextColor : ogTextColor}
               backgroundColor={
                 highlight ? highlightedTextBgColor : "transparent"
               }
               padding={
-                highlight ? `2.5px ${padRight} 0px 5px` : "2.5px 0px 0px 0px"
+                highlight ? `2.5px ${padRight} 0px 5px` : `2.5px 5px 0px 0px`
               }
               height="calc(100% - 5px)"
-              width="calc(100% + 2px)"
-            >
-              {highlight && ""}
-              {text + " "}
-              {!highlight && " "}
+              width="100%"
+            > 
+              {text}
             </Text>
           </Box>
         );

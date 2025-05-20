@@ -8,7 +8,7 @@ interface PoliceTapeProps {
   rotation: number;
   tapeText: string;
   startsFrom: "left" | "right";
-  tapeColor: string;
+  tapeColor?: string;
 }
 
 export default function PoliceTape({

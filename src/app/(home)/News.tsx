@@ -1,12 +1,14 @@
 "use client";
 
-import { Text, Box, VStack, Button, Flex, Icon } from "@chakra-ui/react";
+import { Text, Box, VStack, Flex, Icon } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 
 
 import Section from "@/components/ui/Section";
 import Headline from "@/components/ui/Headline";
+import FITButton from "@/components/ui/FITButton";
+
 import ContentContainer from "@/components/layout/ContentContainer";
 
 import { generalIcon } from "@/ui/icons";
@@ -165,15 +167,7 @@ export default function News() {
       </Box> */}
         </Box>
         <ContentContainer position="absolute" bottom="0" zIndex={3}>
-          <Button
-            width="100%"
-            textStyle="universal.h6"
-            padding="7%"
-            backgroundColor="app.red"
-            color="app.white"
-          >
-            MGA IBANG REPORT
-          </Button>
+          <FITButton text="MGA IBANG REPORT" bgColor="app.red" color="app.white"/>        
         </ContentContainer>
       </VStack>
     </Section>

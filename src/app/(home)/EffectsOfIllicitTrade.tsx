@@ -1,23 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { Box, Text, VStack, Container, Flex, Button } from "@chakra-ui/react";
+import { Box, Text, VStack, Flex } from "@chakra-ui/react";
+
 import Section from "@/components/ui/Section";
-import React from "react";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import Headline from "@/components/ui/Headline";
 import FITButton from "@/components/ui/FITButton";
-import ContentContainer from "@/components/layout/ContentContainer";
-
 import PoliceTape from "@/components/ui/PoliceTape";
+import EffectsCardSlider from "@/components/ui/EffectsCardSlider";
+
+import ContentContainer from "@/components/layout/ContentContainer";
 
 export default function EffectsOfIllicitTrade() {
   const cardArticles = [
     {
+      id: "1",
       imageSrc: "/assets/effect-1.jpg",
       imageAlt: "Effect 1",
       title: "Lugi ang taumbayan",
@@ -25,6 +22,7 @@ export default function EffectsOfIllicitTrade() {
         "Illicit trade is detrimental to the interest and welfare of the Filipinos as they get less for their money with cheap but fake, unsafe, or substandard products.",
     },
     {
+      id: "2",
       imageSrc: "/assets/effect-2.jpg",
       imageAlt: "Effect 2",
       title: "Di purkit nakamura, tama ka",
@@ -32,8 +30,9 @@ export default function EffectsOfIllicitTrade() {
         "Government should ensure a level playing field where all legitimate, tax paying industries can compete for their fair share of the free market economy.",
     },
     {
+      id: "3",
       imageSrc: "/assets/effect-2.jpg",
-      imageAlt: "Effect 2",
+      imageAlt: "Effect 3",
       title: "Bilyung bilyon ang nanakaw sa Pilipino",
       description:
         "Jobs of hard-working Filipinos are threatened with the entry and proliferation of cheap smuggled goods.",
@@ -57,15 +56,6 @@ export default function EffectsOfIllicitTrade() {
     },
   ];
 
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    adaptiveHeight: true,
-  };
-
   const originalText = "Bakit Dapat May Peke-alam Ka?";
   const highlightedText = ["Bakit", "Dapat", "May", "Peke-alam"];
 
@@ -84,92 +74,21 @@ export default function EffectsOfIllicitTrade() {
           </Box>
         </ContentContainer>
 
-        {/* SLIDER */}
-
-        <Box
-          display="flex"
-          flexDir="column"
-          width="app.base"
-          paddingBottom="app.base"
-          border="1px solid white"
-        >
-          <Slider {...settings}>
-            {cardArticles.map((card, index) => (
-              <Container key={index} height="100%" padding="app.base">
-                <Flex
-                  backgroundColor="app.white"
-                  height="100%"
-                  flexDirection="column"
-                  alignItems="center"
-                >
-                  <Box padding="app.base">
-                    <Image
-                      src={card.imageSrc}
-                      width={319}
-                      height={227}
-                      alt={card.imageAlt}
-                    />
-                  </Box>
-                  <Box padding="app.base" alignSelf="flex-start">
-                    <Flex
-                      color="app.black"
-                      rowGap={5}
-                      columnGap={5}
-                      width="inherit"
-                    >
-                      <Text textStyle="universal.h3">{index + 1 + "."}</Text>
-                      <Flex
-                        flexDirection="column"
-                        rowGap={2}
-                        columnGap={2}
-                        wordBreak="break-word"
-                      >
-                        <Text
-                          textStyle="universal.h3"
-                          width="100%"
-                          textAlign="left"
-                        >
-                          {card.title}
-                        </Text>
-                        <Text
-                          textStyle="universal.description"
-                          color="app.black"
-                        >
-                          {card.description}
-                        </Text>
-                      </Flex>
-                    </Flex>
-                  </Box>
-                </Flex>
-              </Container>
-            ))}
-          </Slider>
-        </Box>
-
-        {/* SLIDER */}
+        <EffectsCardSlider cardArticles={cardArticles} />
 
         <ContentContainer marginBottom="64px">
-          <Button
-            width="100%"
-            textStyle="universal.h6"
-            padding="10%"
-            backgroundColor="app.black"
-          >
-            ALAMIN ANG IBA PANG DETALYE
-          </Button>
+          <FITButton text="ALAMIN ANG IBA PANG DETALYE" />
         </ContentContainer>
 
         <PoliceTape
           rotation={4.8}
-          tapeText={"FIGHT ILLICIT TRADE"}
+          tapeText="FIGHT ILLICIT TRADE"
           startsFrom="left"
-          tapeColor="app.black"
         />
         <PoliceTape
           rotation={-4.19}
-          tapeText={"FIGHT ILLICIT TRADE"}
+          tapeText="FIGHT ILLICIT TRADE"
           startsFrom="right"
-          tapeColor="app.black"
         />
 
         <ContentContainer>
@@ -197,7 +116,6 @@ export default function EffectsOfIllicitTrade() {
             <Box
               width={215}
               height={182}
-              // overflowY="hidden"
               position="absolute"
               top="50%"
               left="50%"
@@ -229,7 +147,7 @@ export default function EffectsOfIllicitTrade() {
 
         <ContentContainer>
           <Text
-            textStyle="universal.fb_cond_description"
+            textStyle="universal.description"
             textAlign="center"
             color="app.white"
           >
@@ -247,7 +165,7 @@ export default function EffectsOfIllicitTrade() {
               key={index}
               color="app.white"
             >
-              <Flex flexDir="column" alignItems="center">
+              <Flex flexDir="column" alignItems="center" rowGap="8px">
                 <Text textStyle="universal.title" textAlign="center">
                   {consequence.title}
                 </Text>

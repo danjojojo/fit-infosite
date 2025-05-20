@@ -30,15 +30,15 @@ export default function Header() {
     let scrollTimeout: NodeJS.Timeout;
 
     const handleScroll = () => {
-      setNavDisplay(false); // Hide on scroll
+      setNavDisplay(true);
 
-      // Reset previous timeout
       if (scrollTimeout) clearTimeout(scrollTimeout);
 
-      // Show after scrolling stops
-      scrollTimeout = setTimeout(() => {
-        setNavDisplay(true);
-      }, 250); // Adjust delay as needed
+      if (!toggledMenu) {
+        scrollTimeout = setTimeout(() => {
+          setNavDisplay(false);
+        }, 2000);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +47,7 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
       clearTimeout(scrollTimeout);
     };
-  }, []);
+  }, [toggledMenu]);
 
   return (
     <Stack

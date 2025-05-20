@@ -23,7 +23,7 @@ export default function Home() {
     >
       <Header/>
       <Landing/>
-      <IllicitTobaccoTrade/>
+      <IllicitTobaccoTrade/> 
       <IllicitCigarettes/>
       <EffectsOfIllicitTrade/>
       <Tips/>
