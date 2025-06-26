@@ -1,0 +1,26 @@
+{
+  "originalText": "Tips para makaiwas sa ilegal na sigarilyo",
+  "highlightedText": ["Tips", "makaiwas"],
+  "tipCards": [
+    {
+      "image": "/assets/tips-1.png",
+      "title": "GRAPHIC HEALTH WARNING",
+      "description": "Kapag walang label, walang kasiguraduhan yan. Bahagi ng batas ang paglalagay ng mga graphic health warning sa mga kaha ng sigarilyo."
+    },
+    {
+      "image": "/assets/tips-2.png",
+      "title": "PH TAX STAMP",
+      "description": "Sa kasalukuyan, Vinta ang nakalagay sa tunay na tax stamp at walang umuulit na numero sa code nito. Karaniwang tarsier o butanding parin ang nasa pekeng yosi."
+    },
+    {
+      "image": "/assets/tips-3.png",
+      "title": "MANUFACTURER ADDRESS",
+      "description": "Walang address ng manufacturer?  Maaring gawa ito sa maruruming pabrika."
+    },
+    {
+      "image": "/assets/tips-4.png",
+      "title": "MAS MABABANG PRESYO SA MINIMUM PRICE",
+      "description": "Masyadong mura? Malamang peke yan! Hindi dapat bababa sa minimum price na ₱114.60 ang isang kaha ng orig na yosi."
+    }
+  ]
+}

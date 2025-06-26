@@ -32,7 +32,6 @@ export default function EffectsCardSlider({ cardArticles }: EffectsCardsProps) {
       flexDir="column"
       width="app.base"
       paddingBottom="app.base"
-      border="1px solid white"
     >
       <Slider {...settings}>
         {cardArticles.map((card, index) => (

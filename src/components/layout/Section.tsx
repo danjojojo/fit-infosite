@@ -13,6 +13,7 @@ const Section = ({ children, boxProps, ...props }: SectionProps) => {
       width="inherit"
       position="relative"
       overflow="hidden"
+      scrollMarginTop="87px"
     >
       <Box {...boxProps}>{children}</Box>
     </Box>

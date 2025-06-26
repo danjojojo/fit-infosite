@@ -1,0 +1,43 @@
+{
+  "originalText": "Bakit Dapat May Peke-alam Ka?",
+  "highlightedText": ["Bakit", "Dapat", "May", "Peke-alam"],
+  "warningText": ["Delikado ang", "Magpa-budol"],
+  "warningDescription": "Multa at kulong ang kahihinatnan mo kung ikaw ay nahuling nagbebenta o namamahagi ng peke o ilegal na sigarilyo",
+  "cardArticles": [
+    {
+      "id": "1",
+      "imageSrc": "/assets/effect-1.jpg",
+      "imageAlt": "Effect 1",
+      "title": "Lugi ang taumbayan",
+      "description": "Illicit trade is detrimental to the interest and welfare of the Filipinos as they get less for their money with cheap but fake, unsafe, or substandard products."
+    },
+    {
+      "id": "2",
+      "imageSrc": "/assets/effect-2.jpg",
+      "imageAlt": "Effect 2",
+      "title": "Di purkit nakamura, tama ka",
+      "description": "Government should ensure a level playing field where all legitimate, tax paying industries can compete for their fair share of the free market economy."
+    },
+    {
+      "id": "3",
+      "imageSrc": "/assets/effect-2.jpg",
+      "imageAlt": "Effect 3",
+      "title": "Bilyung bilyon ang nanakaw sa Pilipino",
+      "description": "Jobs of hard-working Filipinos are threatened with the entry and proliferation of cheap smuggled goods."
+    }
+  ],
+  "consequences": [
+    {
+      "title": "Php 500,000 multa",
+      "description": "Mga tindahang nagbebenta ng yosi na mas mababa sa retail price"
+    },
+    {
+      "title": "Php 2 Million at 5 Yrs Na Pagkulong",
+      "description": "Multa at parusa para sa mga distributor na walang health warnings"
+    },
+    {
+      "title": "Php 1 Million at 8 Yrs Na Pagkulong",
+      "description": "Multa at parusa para sa mga nameke ng Tax Stamp"
+    }
+  ]
+}

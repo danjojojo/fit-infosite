@@ -33,7 +33,7 @@ export default function Headline({
         const nextTextHighlight = highlightedText?.includes(ogText[index + 1]);
 
         const padRight = nextTextHighlight ? "0px" : "5px";
-        const margRight = nextTextHighlight ? "0px" : "7px";
+        const margRight = nextTextHighlight ? "0px" : "8px";
 
         return (
           <Box key={index} width="fit-content" marginRight={margRight}>
@@ -48,7 +48,7 @@ export default function Headline({
               height="calc(100% - 5px)"
               width="100%"
             > 
-              {text}
+              {text}{" "}
             </Text>
           </Box>
         );

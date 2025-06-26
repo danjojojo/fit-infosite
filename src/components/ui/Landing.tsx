@@ -11,7 +11,7 @@ import {
   Button,
   Icon,
 } from "@chakra-ui/react";
-import Section from "@/components/ui/Section";
+import Section from "@/components/layout/Section";
 import { generalIcon } from "@/ui/icons";
 import { LandingSchema } from "@/schemas/LandingSchema";
 

@@ -1,0 +1,33 @@
+{
+  "originalText": "Ireport mo! Puksain natin ang ilegal na yosi!",
+  "highlightedText": ["Ireport", "mo!"],
+  "contactDetails": [
+    {
+      "name": "Email",
+      "icon": "email",
+      "link": "fightit@gmail.com"
+    },
+    {
+      "name": "Contact Number",
+      "icon": "phone",
+      "link": "09173444848"
+    }
+  ],
+  "socialMediaLinks": [
+    {
+      "name": "Facebook",
+      "icon": "facebook",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "link": "https://www.instagram.com"
+    },
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "link": "https://twitter.com"
+    }
+  ]
+}

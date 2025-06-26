@@ -1,0 +1,12 @@
+[
+  { "name": "Home", "section": "home" },
+  {
+    "name": "Ano ang Illicit Tobacco Trade?",
+    "section": "ano-ang-illicit-tobacco-trade"
+  },
+  { "name": "Klase ng Ilegal na Yosi", "section": "klase-ng-ilegal-na-yosi" },
+  { "name": "Epekto ng Illicit Trade", "section": "epekto-ng-illicit-trade" },
+  { "name": "Reports & News", "section": "reports-and-news" },
+  { "name": "About Us", "section": "about-us" },
+  { "name": "Contact Us", "section": "contact-us" }
+]

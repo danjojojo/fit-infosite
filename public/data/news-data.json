@@ -1,0 +1,27 @@
+{
+  "originalText": "Kita namin 'yan",
+  "highlightedText": ["Kita"],
+  "newsArticles": [
+    {
+      "id": "d30a3d4469193a1752644ceada4716cbfeabf6b1266de7981fe672d691a8166e",
+      "image": "/assets/news-1.png",
+      "location": "Malabon City, Metro Manila",
+      "title": "P6.5 M na Smuggled sigarilyo, Timbog!",
+      "description": "Huli ka! Sa tulong ng mga opsiyal mula sa BIR at CIDG, sandamakmak na smuggled na sigarilyo ang nakumpiska mula sa mga suspect."
+    },
+    {
+      "id": "4674e7609ad801a7a83ae5d48201edd1af2604b4eb61b8fc174a307b19640e14",
+      "image": "/assets/news-2.png",
+      "location": "Roxas, Palawan",
+      "title": "Mag-asawang nagbebenta ng ilegal na sigarilyo, arestado",
+      "description": "Arestado ang mag-asawa na nagbebenta ng mga smuggled na sigarilyo sa Poblacion, Roxas, Palawan nito lamang ika-8 ng Enero 2025."
+    },
+    {
+      "id": "b0d876853024f4f01d9bd45abdd3ea66f78dcb3b6e0f592909895e206589b63e",
+      "image": "/assets/news-3.png",
+      "location": "Calatagan, Batangas",
+      "title": "P2.2 M smuggled na sigarilyo, nasabat sa Batangas",
+      "description": "Kinilala ng PNP ang suspek na si alyas “Alwin”, 48 taong gulang, binata at residente ng Barangay Biga, Calatagan, Batangas."
+    }
+  ]
+}

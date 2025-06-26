@@ -1,16 +1,18 @@
-import { Text } from "@chakra-ui/react";
+import { Text, TextProps } from "@chakra-ui/react";
 
-interface ContentDescriptionProps {
+interface ContentDescriptionProps extends TextProps {
     description: string;
+    textProps?: TextProps;
 }
 
-export default function ContentDescription({description} : ContentDescriptionProps) {
+export default function ContentDescription({description, ...textProps} : ContentDescriptionProps) {
   return (
     <Text
       color="app.black"
       textStyle="universal.description"
       marginTop="app.base"
       whiteSpace="pre-line"
+      {...textProps}
     >
       {description}
     </Text>

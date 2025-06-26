@@ -5,14 +5,13 @@ interface ContentContainerProps extends BoxProps {
   boxProps?: BoxProps;
 }
 
-
 export default function ContentContainer({children, ...boxProps} : ContentContainerProps) {
   return (
     <Box
       padding="app.base"
       width="app.base"
       maxWidth="100%"
-      border={"1px solid black"}
+      // border={"1px solid black"}
       {...boxProps}
     >
       {children}

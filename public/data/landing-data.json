@@ -1,0 +1,15 @@
+{
+  "CTAText": "Alamin ang Illicit Trade",
+  "goToSection": "ano-ang-illicit-tobacco-trade",
+  "imageBanner": {
+    "src": "/assets/fit-home-banner.webp",
+    "alt": "Lugi Na, Yari Pa"
+  },
+  "videoPoster": {
+    "src": "/assets/fit-vid-preview.webp",
+    "alt": "Video Poster"
+  },
+  "videoSrc": {
+    "src": "/assets/fit-home-video.mp4"
+  }
+}

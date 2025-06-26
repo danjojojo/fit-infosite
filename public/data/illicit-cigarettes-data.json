@@ -1,0 +1,37 @@
+{
+  "headlineDescription": "Lalong lumaganap ang ilegal na sigarilyo—mas madali nang mabili, mas marami pang brand ang nagsusulputan.",
+  "originalText": "Talamak Na Ang Mga Illicit Cigarettes!",
+  "highlightedText": ["Talamak", "Na"],
+  "topFakeBrands": {
+    "overline": "Ang mga top brand na pinepeke",
+    "description": "Pagdating sa pineke na brand, MIGHTY ang nangunguna, habang MARLBORO humahabol na rin sa 0.6%.",
+    "brands": [
+      {
+        "id": "1",
+        "name": "MARLBORO",
+        "image": ""
+      },
+      {
+        "id": "2",
+        "name": "MIGHTY",
+        "image": ""
+      }
+    ]
+  },
+  "topIllicitWhites": {
+    "overline": "Ang mga top brand na 'illicit whites'",
+    "description": "Sa mga tinatawag na 'illicit whites,' ASTRO (0.6%) at FORT (0.5%) ay mabilis ang paglago—halos kapantay na ng Marlboro.",
+    "brands": [
+      {
+        "id": "1",
+        "name": "ASTRO",
+        "image": "/assets/astro.webp"
+      },
+      {
+        "id": "2",
+        "name": "FORT",
+        "image": "/assets/fort.webp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "headlineText": "'Di maloloko ang may pakialam",
+  "aboutUsTextFIT": "Fight IT is a movement under the Federation of Philippine Industries (FPI) in collaboration with the Philippine Tobacco Institute (PTI) intended to protect consumers, safeguard government revenues, and shield legitimate industries from the ill-effects of smuggling.",
+  "aboutUsTextPTI": "The Philippine Tobacco Institute, Inc. represents, expresses and effects the opinions of the tobacco industry in the Philippines. It is a trade association composed of leading tobacco companies in the Philippines:",
+  "tobaccoCompanies": [
+    {
+      "name": "TBC 1",
+      "image": "/assets/tb_company-1.png"
+    },
+    {
+      "name": "TBC 2",
+      "image": "/assets/tb_company-2.png"
+    },
+    {
+      "name": "TBC 3",
+      "image": "/assets/tb_company-3.png"
+    },
+    {
+      "name": "TBC 4",
+      "image": "/assets/tb_company-4.png"
+    },
+    {
+      "name": "TBC 5",
+      "image": "/assets/tb_company-5.png"
+    },
+    {
+      "name": "TBC 6",
+      "image": "/assets/tb_company-6.png"
+    }
+  ]
+}

@@ -1,12 +1,20 @@
-// import {
-//   ImageSchema,
-//   VideoSchema,
-// } from './GlobalSchema';
+interface ImageSchema {
+  src: string;
+  alt: string;
+}
 
-export interface LandingSchema {
+interface VideoSchema {
+  src: string;
+}
+
+interface LandingSchema {
   CTAText: string;
   goToSection: string;
-  imageBanner: string;
-  videoPoster: string;
-  videoSrc: string;
+  imageBanner: ImageSchema;
+  videoPoster: ImageSchema;
+  videoSrc: VideoSchema;
+}
+
+export interface LandingDataSchema {
+  landingData: LandingSchema;
 }

@@ -31,7 +31,7 @@ export default function PoliceTape({
         trigger: tapeRef.current,
         start: "top 80%",
         end: "bottom 500px",
-        markers: true,
+        // markers: true,
         toggleActions: "none none none none",
         scrub: 0.5,
       },
