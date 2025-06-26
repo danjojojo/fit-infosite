@@ -13,9 +13,6 @@ import ContactUs from "@/app/(home)/ContactUs";
 export default function Page() {
   return (
     <Stack
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
       rowGap={0}
       backgroundColor="app.black"
       width={"100%"}
